@@ -34,3 +34,11 @@ function determineWinner(userChoice, computerChoice){
         return 'Computer Wins'
     }
 }
+function playGame(userChoice){
+    const computerChoice =getComputerChoice();
+    userChoice.textContent = userChoice;
+    computerChoice.textContent = computerChoice;
+    const result = determineWinner(userChoice, computerChoice);
+    gameResultText.textContent= result;
+    updateScore(result);
+}
