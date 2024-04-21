@@ -71,10 +71,10 @@ document.addEventListener("DOMContentLoaded", function() {
     function checkOverallWinner(){
         const overallWinnerText = document.getElementById('overall-winner-text');
         if(userScore === 10){
-            overallWinnerText.textContent = 'You are the overall winner';
+            overallWinnerText.textContent = 'You are the overall winner!';
             restartButton.style.display = 'block';
         } else if(computerScore === 10){
-            overallWinnerText.textContent = 'The computer is the overall winner';
+            overallWinnerText.textContent = 'The computer is the overall winner! How about another game?';
             restartButton.style.display = 'block';
         }
     }
