@@ -3,3 +3,7 @@ const paperButton = document.getElementById('paper');
 const scissorsButton = document.getElementById('scissors');
 const lizardButton = document.getElementById('lizard');
 const spockButton = document.getElementById('spock');
+const userChoiceText = document.getElementById('user-choice-text');
+const computerChoiceText = document.getElementById('computer-choice-text');
+const gameResultText = document.getElementById('game-result-text');
+const restartButton = document.getElementById('restart-button');
