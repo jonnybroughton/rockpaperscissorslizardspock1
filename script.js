@@ -39,11 +39,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function playGame(userChoice){
         const computerChoice = getComputerChoice();
-        userChoiceText.textContent = userChoice;
-        computerChoiceText.textContent = computerChoice;
+        userChoiceText.textContent = capitalize(userChoice);
+    computerChoiceText.textContent = capitalize(computerChoice);
         const result = determineWinner(userChoice, computerChoice);
         gameResultText.textContent = result;
         updateScore(result);
+    }
+    function capitalize(word) {
+        return word.charAt(0).toUpperCase() + word.slice(1);
     }
 
     let userScore = 0;
