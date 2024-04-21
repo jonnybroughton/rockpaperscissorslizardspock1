@@ -13,3 +13,9 @@ paperButton.addEventListener('click', () => playGame('paper'));
 scissorsButton.addEventListener('click', () => playGame('scissors'));
 lizardButton.addEventListener('click', () => playGame('lizard'));
 spockButton.addEventListener('click', () => playGame('spock'));
+
+function getComputerChoice(){
+    const choices = ['rock','paper','scissors','lizard','spock']
+    const randomNumber = Math.floor(Math.random()*5);
+    return choices[randomNumber];
+}
