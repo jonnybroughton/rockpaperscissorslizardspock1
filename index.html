@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+    <h1 id="title">Rock, Paper, Scissors, Lizard, Spock</h1>
     <!--GAME-->
     <div id="game-container">
         <!--GAME CHOICES-->
@@ -17,17 +18,19 @@
         <button id="lizard">Lizard</button>
         <button id="spock">Spock</button>
         </div>
+        <!--INDIVIDUAL GAME OUTCOMES-->
         <div id ="outcomes">
             <div id="user-choice">
                 Your Choice: <span id="user-choice-text"></span>
             </div>
             <div id="computer-choice">
-                Computer's Choice: <span id="computer-choice-text"
+                Computer's Choice: <span id="computer-choice-text"></span>
             </div>
             <div id="game-result">
                 Game Result: <span id="game-result-text"></span>
             </div>
         </div>
+        <!--GAME SCOREBOARD-->
         <div id="scoreboard">
             <div>
                 Your Score: <span id="user-score">0</span>
@@ -36,8 +39,10 @@
                 Computer Score: <span id="computer-score">0</span>
             </div>
         </div>
+        <!--OVERALL WINNER (OUT OF 10 GAMES)-->
         <div id="overall-winner">
-            <p id="overall-winner-text"></p>
+            <p id="overall-winner-text">Placeholder</p>
+            <!--RESTART BUTTON-->
             <button id="restart-button">Restart Game?</button>
         </div>
     </div>
