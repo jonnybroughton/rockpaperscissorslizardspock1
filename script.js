@@ -83,10 +83,8 @@ document.addEventListener("DOMContentLoaded", function() {
         const computerScoreDisplay = document.getElementById('computer-score');
         userScoreDisplay.textContent = userScore;
         computerScoreDisplay.textContent = computerScore;
-        const overallWinnerDiv = document.getElementById('overall-winner');
-        overallWinnerDiv.style.display = 'none';
         const overallWinnerText = document.getElementById('overall-winner-text');
-        overallWinnerText.textContent = '';
+        overallWinnerText.textContent = '';  
     }
 
     restartButton.addEventListener('click', restartGame);
