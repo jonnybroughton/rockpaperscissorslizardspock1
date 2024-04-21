@@ -42,3 +42,19 @@ function playGame(userChoice){
     gameResultText.textContent= result;
     updateScore(result);
 }
+let userScore = 0;
+let computerScore = 0;
+function updateScore(result){
+    const userScoreDisplay = document.getElementById('user-score');
+    const computerScoreDisplay = document.getElementById('computer-score')
+    if (userScore<10 && computerScore<10){
+        if(result==='You Win'){
+            userScore++;
+        } else if(result==='Computer Wins'){
+            computerScore++
+        }
+        userScoreDisplay.textContent = userScore;
+        computerScoreDisplay.textContent= computerScore;
+        checkOverallWinner()
+    }
+}
