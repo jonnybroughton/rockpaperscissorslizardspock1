@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock, Paper, Scissors, Lizard, Spock</title>
     <link rel="stylesheet" href="assets/style.css">
 </head>
+
 <body>
     <h1 id="title">Rock, Paper, Scissors, Lizard, Spock</h1>
     <!--GAME-->
     <div id="game-container">
         <!--GAME CHOICES-->
         <div class="game-choices">
-        <button id="rock">Rock</button>
-        <button id="paper">Paper</button>
-        <button id="scissors">Scissors</button>
-        <button id="lizard">Lizard</button>
-        <button id="spock">Spock</button>
+            <button id="rock">Rock</button>
+            <button id="paper">Paper</button>
+            <button id="scissors">Scissors</button>
+            <button id="lizard">Lizard</button>
+            <button id="spock">Spock</button>
         </div>
         <!--INDIVIDUAL GAME OUTCOMES-->
-        <div id ="outcomes">
+        <div id="outcomes">
             <div id="user-choice">
                 Your Choice: <span id="user-choice-text"></span>
             </div>
@@ -46,7 +48,15 @@
             <button id="restart-button">Restart Game?</button>
         </div>
     </div>
+    <div id="context">
+        <div id="context-title"><h2>What is Rock, Paper, Scissors, Lizard, Spock?</h2></div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/x5Q6-wMx-K8?si=G4d8YVDdXTk1M5Rx"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
     <!--SCRIPT LINK-->
     <script src="script.js"></script>
 </body>
+
 </html>
