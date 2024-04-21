@@ -58,3 +58,11 @@ function updateScore(result){
         checkOverallWinner()
     }
 }
+function checkOverallWinner(){
+    const overallWinnerText= document.getElementById(overall-winner-text);
+    if(userScore===10){
+        overallWinnerText.textContent = 'You are the overall winner';
+    } elseif(computerScore===10){
+            overallWinnerText.textContent = 'The computer is the overall winner'
+        }
+}
