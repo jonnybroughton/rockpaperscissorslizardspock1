@@ -19,3 +19,18 @@ function getComputerChoice(){
     const randomNumber = Math.floor(Math.random()*5);
     return choices[randomNumber];
 }
+function determineWinner(userChoice, computerChoice){
+    if (userChoice===computerChoice){
+        return 'Tie'
+    }else if(
+        (userChoice === 'rock' && (computerChoice === 'lizard' || computerChoice === 'scissors')) ||
+        (userChoice === 'paper' && (computerChoice === 'rock' || computerChoice === 'spock')) ||
+        (userChoice === 'scissors' && (computerChoice === 'paper' || computerChoice === 'lizard')) ||
+        (userChoice === 'lizard' && (computerChoice=== 'paper' || computerChoice === 'spock')) ||
+        (userChoice === 'spock' && (computerChoice === 'scissors' || computerChoice === 'rock'))
+    ){
+        return 'You Win'
+    }else{
+        return 'Computer Wins'
+    }
+}
