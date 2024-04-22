@@ -18,11 +18,15 @@ h1, h2{
     -1px -1px 0 #000,  
      1px -1px 0 #000,
     -1px  1px 0 #000,
-     1px  1px 0 #000; 
+     1px  1px 0 #000;
+     text-align: center;
 }
 /*GAME CHOICES, GAME OUTCOMES AND CHALLENGE MESSAGE STYLES*/
 .game-choices{
     margin-bottom: 50px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 #outcomes div{
     margin-bottom:20px;
@@ -103,4 +107,11 @@ h1, h2{
 #context-title{
     padding: 0 20px;
     text-align: center;
+}
+/*MEDIA QUERIES*/
+@media screen and (max-width:600px) {
+    .game-choices{
+        flex-direction: column;
+        align-items: center;
+    }
 }
