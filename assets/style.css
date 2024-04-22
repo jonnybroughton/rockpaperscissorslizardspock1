@@ -80,7 +80,9 @@ h1, h2{
     -1px -1px 0 #000,  
      1px -1px 0 #000,
     -1px  1px 0 #000,
-     1px  1px 0 #000; 
+     1px  1px 0 #000;
+     align-items: center;
+     text-align: center;
 }
 #overall-winner{
     display: flex;
@@ -93,6 +95,8 @@ h1, h2{
     font-size: 150%;
     color:white;
     padding:0 20px;
+    text-align: center;
+    align-items: center;
 }
 
 /*RESTART BUTTON AND VIDEO CONTEXT STYLES*/
@@ -122,10 +126,12 @@ iframe{
     .game-choices{
         flex-direction: column;
         align-items: center;
+        margin-bottom: 15px;;
     }
     #outcomes{
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
+
 }
