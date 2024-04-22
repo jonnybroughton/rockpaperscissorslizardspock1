@@ -5,11 +5,15 @@ body{
     align-items: center;
     background-color: aqua;
     font-family: 'Work Sans';
+    min-height: 100vh;
+    margin:0;
+    padding:20px;
 }
 #game-container{
     display:flex;
     flex-direction: column;
     align-items: center;
+    width:100%;
 }
 h1, h2{
     font-family:'Noto Sans';
@@ -104,6 +108,11 @@ h1, h2{
     flex-direction: column;
     align-items: center;
 }
+iframe{
+    width:560px;
+   max-width: 100%;
+   height:315px;
+}
 #context-title{
     padding: 0 20px;
     text-align: center;
@@ -113,5 +122,10 @@ h1, h2{
     .game-choices{
         flex-direction: column;
         align-items: center;
+    }
+    #outcomes{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 }
