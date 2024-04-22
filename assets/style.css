@@ -1,3 +1,4 @@
+/*BODY AND GAME CONTAINER STYLES*/
 body{
     display:flex;
     flex-direction: column;
@@ -6,32 +7,6 @@ body{
     font-family: 'Work Sans';
 }
 #game-container{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-}
-.game-choices{
-    margin-bottom: 50px;
-}
-#outcomes div{
-    margin-bottom:20px;
-    padding:0 50px;
-    font-size:150%;
-}
-#scoreboard div{
-    margin-bottom:20px;
-}
-
-.game-choices button{
-    font-size: 130%;
-    margin:20px 20px;
-    border-radius: 20px;
-    background-color: orange;
-    color: white;
-}
-
-#context{
-    margin-top:30px;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -45,6 +20,24 @@ h1, h2{
     -1px  1px 0 #000,
      1px  1px 0 #000; 
 }
+/*GAME CHOICES, GAME OUTCOMES AND CHALLENGE MESSAGE STYLES*/
+.game-choices{
+    margin-bottom: 50px;
+}
+#outcomes div{
+    margin-bottom:20px;
+    padding:0 50px;
+    font-size:150%;
+}
+
+.game-choices button{
+    font-size: 130%;
+    margin:20px 20px;
+    border-radius: 20px;
+    background-color: orange;
+    color: white;
+}
+
 #outcomes{
     display:flex;
     margin-bottom: 20px;
@@ -56,6 +49,18 @@ h1, h2{
     -1px  1px 0 #000,
      1px  1px 0 #000; 
 }
+#challenge-message{
+    margin-bottom: 60px;
+    font-size: 120%;
+    font-weight: bold;
+    color:orange;
+    text-shadow:
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000; 
+}
+/*SCOREBOARD STYLES*/
 #scoreboard{
     display:flex;
 }
@@ -74,30 +79,28 @@ h1, h2{
     flex-direction: column;
     align-items: center;
 }
-#challenge-message{
-    margin-bottom: 60px;
-    font-size: 120%;
-    font-weight: bold;
-    color:orange;
-    text-shadow:
-    -1px -1px 0 #000,  
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000; 
-}
+
 #overall-winner-text{
     background-color: orange;
     font-size: 150%;
     color:white;
     padding:0 20px;
 }
-#context-title{
-    padding: 0 20px;
-    text-align: center;
-}
+
+/*RESTART BUTTON AND VIDEO CONTEXT STYLES*/
 #restart-button{
     background-color: orange;
     color:white;
     border-radius: 20px;
     font-size: 115%;
+}
+#context{
+    margin-top:30px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+#context-title{
+    padding: 0 20px;
+    text-align: center;
 }
