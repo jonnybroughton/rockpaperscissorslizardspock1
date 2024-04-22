@@ -15,7 +15,7 @@ body{
 }
 #outcomes div{
     margin-bottom:20px;
-    padding-right: 50px;
+    padding:0 50px;
     font-size:150%;
 }
 #scoreboard div{
@@ -37,19 +37,37 @@ body{
     align-items: center;
 }
 h1, h2{
-    font-family:'Noto Sans'
-
+    font-family:'Noto Sans';
+    color:orange;
+    text-shadow:
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000; 
 }
 #outcomes{
     display:flex;
     margin-bottom: 20px;
+    font-weight: bold;
+    color:orange;
+    text-shadow:
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000; 
 }
 #scoreboard{
     display:flex;
 }
 #scoreboard div{
     margin:0 20px;
-    font-size:120%;
+    font-size:130%;
+    color:orange;
+    text-shadow:
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000; 
 }
 #overall-winner{
     display: flex;
@@ -58,4 +76,28 @@ h1, h2{
 }
 #challenge-message{
     margin-bottom: 60px;
+    font-size: 120%;
+    font-weight: bold;
+    color:orange;
+    text-shadow:
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000; 
+}
+#overall-winner-text{
+    background-color: orange;
+    font-size: 150%;
+    color:white;
+    padding:0 20px;
+}
+#context-title{
+    padding: 0 20px;
+    text-align: center;
+}
+#restart-button{
+    background-color: orange;
+    color:white;
+    border-radius: 20px;
+    font-size: 115%;
 }
