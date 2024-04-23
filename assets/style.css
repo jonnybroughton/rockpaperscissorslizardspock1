@@ -39,11 +39,12 @@ h1, h2{
 }
 
 .game-choices button{
-    font-size: 130%;
+    font-size: 250%;
     margin:20px 20px;
     border-radius: 20px;
     background-color: orange;
     color: white;
+
 }
 
 #outcomes{
@@ -55,7 +56,8 @@ h1, h2{
     -1px -1px 0 #000,  
      1px -1px 0 #000,
     -1px  1px 0 #000,
-     1px  1px 0 #000; 
+     1px  1px 0 #000;
+     text-align: center;
 }
 #challenge-message{
     margin-bottom: 60px;
