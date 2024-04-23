@@ -91,6 +91,9 @@ document.addEventListener("DOMContentLoaded", function() {
         computerScoreDisplay.textContent = computerScore;
         const overallWinnerText = document.getElementById('overall-winner-text');
         overallWinnerText.textContent = '';  
+        userChoiceText.textContent='';
+        computerChoiceText.textContent='';
+        gameResultText.textContent='';
     }
 
     restartButton.addEventListener('click', restartGame);
