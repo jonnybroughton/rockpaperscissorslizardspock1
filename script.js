@@ -1,5 +1,5 @@
 /*DOMContentLoaded to make sure everything loads to ensure game plays as expected*/
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     /*define constants and click event listeners*/
     const rockButton = document.getElementById('rock');
     const paperButton = document.getElementById('paper');
@@ -17,14 +17,14 @@ document.addEventListener("DOMContentLoaded", function() {
     lizardButton.addEventListener('click', () => playGame('lizard'));
     spockButton.addEventListener('click', () => playGame('spock'));
     /*Computer Choice Function*/
-    function getComputerChoice(){
+    function getComputerChoice() {
         const choices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
         const randomNumber = Math.floor(Math.random() * 5);
         return choices[randomNumber];
     }
     /*Determine Winner Function*/
-    function determineWinner(userChoice, computerChoice){
-        if (userChoice === computerChoice){
+    function determineWinner(userChoice, computerChoice) {
+        if (userChoice === computerChoice) {
             return 'Tie';
         } else if (
             (userChoice === 'rock' && (computerChoice === 'lizard' || computerChoice === 'scissors')) ||
@@ -32,17 +32,17 @@ document.addEventListener("DOMContentLoaded", function() {
             (userChoice === 'scissors' && (computerChoice === 'paper' || computerChoice === 'lizard')) ||
             (userChoice === 'lizard' && (computerChoice === 'paper' || computerChoice === 'spock')) ||
             (userChoice === 'spock' && (computerChoice === 'scissors' || computerChoice === 'rock'))
-        ){
+        ) {
             return 'You Win';
         } else {
             return 'Computer Wins';
         }
     }
     /*PlayGame function from user choices*/
-    function playGame(userChoice){
+    function playGame(userChoice) {
         const computerChoice = getComputerChoice();
         userChoiceText.textContent = capitalize(userChoice);
-    computerChoiceText.textContent = capitalize(computerChoice);
+        computerChoiceText.textContent = capitalize(computerChoice);
         const result = determineWinner(userChoice, computerChoice);
         gameResultText.textContent = result;
         updateScore(result);
@@ -55,14 +55,14 @@ document.addEventListener("DOMContentLoaded", function() {
     let userScore = 0;
     let computerScore = 0;
 
-    function updateScore(result){
+    function updateScore(result) {
         const userScoreDisplay = document.getElementById('user-score');
         const computerScoreDisplay = document.getElementById('computer-score');
 
-        if (userScore < 10 && computerScore < 10){
-            if(result === 'You Win'){
+        if (userScore < 10 && computerScore < 10) {
+            if (result === 'You Win') {
                 userScore++;
-            } else if(result === 'Computer Wins'){
+            } else if (result === 'Computer Wins') {
                 computerScore++;
             }
             userScoreDisplay.textContent = userScore;
@@ -71,18 +71,18 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
     /*Function to decide overall winner out of 10 games*/
-    function checkOverallWinner(){
+    function checkOverallWinner() {
         const overallWinnerText = document.getElementById('overall-winner-text');
-        if(userScore === 10){
+        if (userScore === 10) {
             overallWinnerText.textContent = 'You are the overall winner!';
             restartButton.style.display = 'block';
-        } else if(computerScore === 10){
+        } else if (computerScore === 10) {
             overallWinnerText.textContent = 'The computer is the overall winner! How about another game?';
             restartButton.style.display = 'block';
         }
     }
     /*Function to allow game to be restarted*/
-    function restartGame(){
+    function restartGame() {
         userScore = 0;
         computerScore = 0;
         const userScoreDisplay = document.getElementById('user-score');
@@ -90,11 +90,22 @@ document.addEventListener("DOMContentLoaded", function() {
         userScoreDisplay.textContent = userScore;
         computerScoreDisplay.textContent = computerScore;
         const overallWinnerText = document.getElementById('overall-winner-text');
-        overallWinnerText.textContent = '';  
-        userChoiceText.textContent='';
-        computerChoiceText.textContent='';
-        gameResultText.textContent='';
+        overallWinnerText.textContent = '';
+        userChoiceText.textContent = '';
+        computerChoiceText.textContent = '';
+        gameResultText.textContent = '';
     }
 
     restartButton.addEventListener('click', restartGame);
+});
+/*Instructions popup function*/
+const instructionsToggle = document.getElementById('instructions-toggle');
+const instructionsPopup = document.getElementById('instructions-popup');
+const closePopup = instructionsPopup.querySelector('.close');
+
+instructionsToggle.addEventListener('click', function () {
+    instructionsPopup.style.display = 'block';
+});
+closePopup.addEventListener('click', function () {
+    instructionsPopup.style.display = 'none';
 });

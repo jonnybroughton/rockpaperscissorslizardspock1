@@ -11,9 +11,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assers/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assers/favicon/favicon-16x16.png">
 </head>
 
 <body>
@@ -22,13 +22,35 @@
     <div id="game-container">
         <!--GAME CHOICES-->
         <div class="game-choices">
-            <button id="rock" >🖖</button>
-            <button id="paper" >📄</button>
+            <button id="rock">🪨</button>
+            <button id="paper">📄</button>
             <button id="scissors">✂️ </button>
             <button id="lizard">🦎 </button>
             <button id="spock">🖖</button>
         </div>
         <p id="challenge-message">First to 10 Wins!</p>
+        <button id="instructions-toggle">Game Instructions</button>
+        <div id="instructions-popup" class="popup">
+            <div class=popup-content>
+            <span class="close">X</span>
+            <h3>How to Play</h3>
+            <p>To play the game, you must pick one of the options above, and the computer will choose one too.</p>
+            <br>
+            <p>Rock crushes Scissors and Lizard</p>
+            <br>
+            <p>Scissors cuts Paper and Lizard</p>
+            <br>
+            <p>Paper covers rock and disproves Spock</p>
+            <br>
+            <p>Lizard poisons Spock and eats Paper</p>
+            <br>
+            <p>Spock smashes Scissors and vaporises Rock</p>
+            <br>
+            <p>Each click of the choices is one round, the first to win 10 rounds is declared the winner.</p>
+            <br>
+            <p>Good Luck!</p>
+            </div>
+        </div>
         <!--INDIVIDUAL GAME OUTCOMES-->
         <div id="outcomes">
             <div id="user-choice">
@@ -56,16 +78,15 @@
             <!--RESTART BUTTON-->
             <button id="restart-button">Restart Game?</button>
         </div>
-    <!--VIDEO CONTEXT-->
-    <div id="context">
-        <div id="context-title">
-            <h2>What is Rock, Paper, Scissors, Lizard, Spock?</h2>
+        <!--VIDEO CONTEXT-->
+        <div id="context">
+            <div id="context-title">
+                <h2>What is Rock, Paper, Scissors, Lizard, Spock?</h2>
+            </div>
+            <iframe src="https://www.youtube.com/embed/x5Q6-wMx-K8?si=G4d8YVDdXTk1M5Rx" title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-        <iframe src="https://www.youtube.com/embed/x5Q6-wMx-K8?si=G4d8YVDdXTk1M5Rx"
-            title="YouTube video player" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
     </div>
     <!--SCRIPT LINK-->
     <script src="script.js"></script>

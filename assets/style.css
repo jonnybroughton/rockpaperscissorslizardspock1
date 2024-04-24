@@ -25,6 +25,43 @@ h1, h2{
      1px  1px 0 #000;
      text-align: center;
 }
+/*INSTRUCTIONS POPUP*/
+#instructions-toggle{
+    background-color: orange;
+    color:white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 80%;
+    height: 100%;
+    background-color:orange;
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+.popup-content {
+    background-color:orange;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    text-align: center;
+    color:white;
+}.popup-content p{
+    font-size: 150%;
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    z-index: 999999;
+}
 /*GAME CHOICES, GAME OUTCOMES AND CHALLENGE MESSAGE STYLES*/
 .game-choices{
     margin-bottom: 50px;
@@ -60,7 +97,7 @@ h1, h2{
      text-align: center;
 }
 #challenge-message{
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     font-size: 120%;
     font-weight: bold;
     color:orange;
@@ -130,6 +167,9 @@ iframe{
         flex-direction: column;
         align-items: center;
         margin-bottom: 15px;;
+    }
+    .game-choices button{
+        margin-bottom:5px;
     }
     #outcomes{
         flex-direction: column;
