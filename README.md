@@ -51,3 +51,36 @@ My Rock, Paper, Scissors, Lizard, Spock website is a one page website, allowing 
 ## Languages Used
 - This website was structured using HTML, and styled using CSS. The functionality of elements such as the game, restart button and 'How to Play' instructions was implemented using JavaScript.
 
+## Deployment
+The website was deployed using Github Pages. The instructions to do this are as follows:
+
+1. Sign in to Github
+2. Find the repository of the site (rockpaperscissorslizardspock1)
+3. Click on 'Settings' within the repository
+4. In the navigation section, click pages
+5. In the Source section, choose 'main' from the drop down select branch menu. Select 'root' from the drop
+down select folder menu.
+6. Click 'save'. The site should now be deployed with a live link to view the site. 
+
+The live link to view my live site is https://jonnybroughton.github.io/rockpaperscissorslizardspock1/
+
+## Testing
+To ensure less problems down the line, I regularly reviewed the output of the site as I went along by utilising Chrome Developer Tools. This included making sure the site looks good on smaller devices, using a 'Mobile First' development approach.
+
+### W3C Validator
+![screenshot](assets/screenshots/htmlvalidator.png)
+As the website is comprised of a single page, I only had one set of HTML to test, and thankfully it passes with no errors or warnings.
+![screenshot](assets/screenshots/cssvalidator.png)
+I also tested the website's CSS styling to check for any errors, with none to report.
+
+### JSHint Testing
+![screenshot](assets/screenshots/JSHintvalidator.png)
+I also wanted to make sure that there were no issues within the JavaScript, which is of paramount importance as JavaScript is the backbone of the site's main feature and appeal, the game. I tested the JavaScript using the JSHint validator, and again there are no errors to show.
+### Lighthouse Testing
+Within Chrome Developer Tools, I used their inhouse testing on the deployed version of the site to get an understanding of how the site scores with regards to performance, accessibility, adherence to best practices and search engine optimisation. However, we do have two different readings.
+#### Normal Lighthouse test
+![screenshot](assets/screenshots/normaltest.png)
+Within this test, we can see that overall the website scores highly in performance from the load time, accessibility and SEO, but less than ideal in best practices, however, from researching further, this score appears to be particularly affected from external third party cookies derived from the Youtube iframe.
+#### Incognito Lighthouse test
+![screenshot](assets/screenshots/incognitotest.png)
+In order to get a more accurate reading, I also tested the website in Incognito mode to remove influence on the scores from the aforementioned third party cookies from the Youtube video. This time around, the score jumps all the way up to 100, while the performance dips slightly, showing that the load time of the site is somewhat affected by being viewed in incognito mode, namely the First Contentful Paint, likely because of the absence of cached resources and potential differences in network conditions.
