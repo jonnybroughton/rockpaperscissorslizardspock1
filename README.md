@@ -84,3 +84,9 @@ Within this test, we can see that overall the website scores highly in performan
 #### Incognito Lighthouse test
 ![screenshot](assets/screenshots/incognitotest.png)
 In order to get a more accurate reading, I also tested the website in Incognito mode to remove influence on the scores from the aforementioned third party cookies from the Youtube video. This time around, the score jumps all the way up to 100, while the performance dips slightly, showing that the load time of the site is somewhat affected by being viewed in incognito mode, namely the First Contentful Paint, likely because of the absence of cached resources and potential differences in network conditions.
+
+## Media Credits
+
+The link to the Youtube video of The Big Bang Theory scene is https://www.youtube.com/watch?v=x5Q6-wMx-K8
+
+The Favicon used for the site was from https://favicon.io/ and the icon itself is from this link: https://favicon.io/emoji-favicons/scissors/
