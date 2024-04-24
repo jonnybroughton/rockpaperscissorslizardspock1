@@ -40,3 +40,14 @@ My Rock, Paper, Scissors, Lizard, Spock website is a one page website, allowing 
 
 ![screenshot](assets/screenshots/videocontext.png)
 - At the bottom of the page, there is an iframe showcasing a Youtube video of the Big Bang Theory Scene where the game of Rock, Paper, Scissors, Lizard, Spock was created, which provides the user with context regarding the game, and having the video inside the page creates a positive user experience by allowing them to watch the video from the site itself without having to go anywhere external and taking away from the site's functionality.
+
+## Typography
+- The fonts used on the site are Work Sans and Noto Sans. These are both sans fonts and I decided to use them for their modern and fun styling, which fits with the overall image of the site being centered around a game.
+
+## Accessibility 
+- I have made sure that the site is accessible to as many people as possible. Measures I have taken to ensure this are by using semantic HTML, consistent colour contrast throughout the site, big buttons and feedback to what choices have been made, and instructions available to be read at the click of the 'How to Play' button. 
+- The site has also been optimised to be able to be viewed and played on a range of screen sizes, whether it be a large desktop monitor or one of the smallest phone sizes, such as the folded screen on the Samsung Galaxy Z Fold 5 by making most elements responsive or through media queries altering the layout of the site.
+
+## Languages Used
+- This website was structured using HTML, and styled using CSS. The functionality of elements such as the game, restart button and 'How to Play' instructions was implemented using JavaScript.
+
