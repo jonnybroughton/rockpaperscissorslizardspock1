@@ -74,7 +74,7 @@ As the website is comprised of a single page, I only had one set of HTML to test
 I also tested the website's CSS styling to check for any errors, with none to report.
 
 ### JSHint Testing
-![screenshot](assets/screenshots/JSHintvalidator.png)
+![screenshot](assets/screenshots/jshint.png)
 I also wanted to make sure that there were no issues within the JavaScript, which is of paramount importance as JavaScript is the backbone of the site's main feature and appeal, the game. I tested the JavaScript using the JSHint validator, and again there are no errors to show.
 ### Lighthouse Testing
 Within Chrome Developer Tools, I used their inhouse testing on the deployed version of the site to get an understanding of how the site scores with regards to performance, accessibility, adherence to best practices and search engine optimisation. However, we do have two different readings.
